@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+	  <listener class-name="com.nagp.listeners.Listeners"></listener>
+	  <listener class-name="com.nagp.listeners.AnnotationTransformer"></listener>
+  	</listeners>	
+  <test thread-count="5" name="Selenium Test Cases">
+    <classes>	 
+      
+      <class name="com.nagp.testcases.LoginTest"/>
+      <class name="com.nagp.testcases.SearchTest"/>
+      <class name="com.nagp.testcases.AddToCart"/>
+      <class name="com.nagp.testcases.RemoveFromCartTest"/>
+      <class name="com.nagp.testcases.ClickProductDetailsTest"/>
+	  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
